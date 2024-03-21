@@ -69,6 +69,17 @@ body {
   border-radius: 5px;
 }
 
+.bloco3 h1 {
+  margin: 4px;
+  padding: 1em;
+  color: azure;
+  text-shadow: 4px 3px 1px #5b0c3b;
+  animation: square 5s cubic-bezier(0.34, 1.56, 0.64, 1) 0s infinite normal none;
+  display: flex;
+  justify-content: center;
+  text-decoration: uppercase;
+}
+
 .bloco3 p {
   color: azure;
   text-shadow: 4px 3px 1px #5b0c3b;
