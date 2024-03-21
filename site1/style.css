@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Ubuntu:wght@300&display=swap");
+
+/* Estilos gerais */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000e9;
+  font-family: "Ubuntu", "Oswald", "Kanit", sans-serif; /* Escolha a fonte desejada */
+  flex-direction: column;
+  border: 4px #320974c6 solid;
+  border-width: 5vh;
+  border-style: groove;
+}
+
+.tabelas {
+  display: flex; /* Cria um contêiner flexível */
+  justify-content: space-between; /* Separa as tabelas com espaço entre elas */
+}
+
+.tabela-esquerda,
+.tabela-direita {
+  border: 1px solid #000; /* Adiciona uma borda às tabelas (opcional) */
+  border: 4px #320974c6 solid;
+  background-color: #320974c6;
+  color: azure;
+  margin: 10px;
+  padding: 20px;
+  letter-spacing: 3px;
+  border-radius: 5px;
+}
+
+.tabela-esquerda {
+  width: 48%; /* Define a largura da tabela esquerda */
+}
+
+.tabela-direita {
+  width: 48%; /* Define a largura da tabela direita */
+}
+
+.img1 {
+  width: 480px;
+  height: 480px;
+  border-radius: 50px;
+  margin-right: 20px; /* Espaço entre a imagem e o texto */
+  border: 4px solid #320974c6;
+  animation: square 5s cubic-bezier(0.34, 1.56, 0.64, 1) 0s infinite normal none;
+}
+
+
+.img2 {
+  width: 330px;
+  height: 300px;
+  border-radius: 50px;
+  border: 4px solid #320974c6;
+}
+
+.img3 {
+  width: 330px;
+  height: 300px;
+  border-radius: 50px;
+  border: 4px solid #320974c6;
+}
+
+@keyframes square {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.table1 {
+  border: 4px #320974c6 solid;
+  background-color: #320974c6;
+  color: azure;
+  margin: 10px;
+  padding: 20px;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.table2 {
+  border: 4px #320974c6 solid;
+  background-color: #320974c6;
+  justify-content: center;
+  color: azure;
+  margin: 20px;
+  padding: 50px;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.table3 {
+  border: 4px #320974c6 solid;
+  background-color: #320974c6;
+  justify-content: center;
+  color: azure;
+  margin: 20px;
+  padding: 50px;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.table4 {
+  border: 4px #320974c6 solid;
+  background-color: #320974c6;
+  justify-content: center;
+  color: azure;
+  margin: 20px;
+  padding: 50px;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+}
+/* Ver o motivo disto deixar a table centralizada!!!! */
+.bloco3 {
+  display: flex;
+  justify-content: center;
+  border-spacing: 10px;
+}
+
+h2 {
+  font-size: 24px; /* Tamanho do título */
+  color: azure;
+  animation: square 5s cubic-bezier(0.34, 1.56, 0.64, 1) 0s infinite normal none;
+  text-shadow: 2px 2px 1px black;
+  display: flex;
+  justify-content: center;
+}
+
+/*título: Habilidades furina */
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+svg {
+  font-family: "Zen Dots", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+svg text {
+  animation: stroke 3s infinite alternate;
+  stroke-width: 2;
+  stroke: #ffffff;
+  font-size: 100px;
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(255, 255, 255, 0);
+    stroke: rgba(255, 255, 255, 1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(255, 255, 255, 0);
+    stroke: rgba(255, 255, 255, 1);
+  }
+  80% {
+    fill: rgba(255, 255, 255, 0);
+    stroke: rgba(255, 255, 255, 1);
+    stroke-width: 3;
+  }
+  100% {
+    fill: rgba(255, 255, 255, 1);
+    stroke: rgba(255, 255, 255, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+  wrapper {
+    background-color: #000000e9;
+  }
+}
+/*
+Título: Habilidades Furina
+*/
+
+.title  {
+  width: 100px;
+  text-decoration: uppercase;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.description p {
+  background-color: #320974;
+  padding: 20px;
+  margin: 5vh;
+  letter-spacing: 3px;
+  color: azure;
+  border-radius: 5px;
+}
+
+/* Estilos da navbar */
+#menu {
+  background: #320974;
+  background: linear-gradient(to bottom, #320974, #1d0542);
+  color: #fff;
+  height: 49px;
+  padding-left: 30px;
+  border-radius: 3px;
+}
+#menu ul,
+#menu li {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+#menu ul {
+  width: 150vh;
+}
+#menu li {
+  float: left;
+  display: inline;
+  position: relative;
+}
+#menu a {
+  display: block;
+  line-height: 49px;
+  padding: 0 14px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+#menu a.dropdown-arrow:after {
+  content: "\23F7";
+  margin-left: 5px;
+}
+#menu li a:hover {
+  color: #320974;
+  background: #ffffff;
+}
+#menu input {
+  display: none;
+  margin: 0;
+  padding: 0;
+  height: 49px;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+#menu label {
+  display: none;
+  line-height: 49px;
+  text-align: center;
+  position: absolute;
+  left: 35px;
+}
+#menu label:before {
+  font-size: 1.6em;
+  content: "\2261";
+  margin-left: 20px;
+}
+#menu ul.sub-menus {
+  height: auto;
+  overflow: hidden;
+  width: 170px;
+  background: #320974;
+  position: absolute;
+  z-index: 99;
+  display: none;
+}
+#menu ul.sub-menus li {
+  display: block;
+  width: 100%;
+}
+#menu ul.sub-menus a {
+  color: #ffffff;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+#menu li:hover ul.sub-menus {
+  display: block;
+}
+#menu ul.sub-menus a:hover {
+  background: #6e14ff;
+  color: #ffffff;
+}
+@media screen and (max-width: 800px) {
+  #menu {
+    position: relative;
+  }
+  #menu ul {
+    background: #111;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    height: auto;
+    display: none;
+  }
+  #menu ul.sub-menus {
+    width: 100%;
+    position: static;
+  }
+  #menu ul.sub-menus a {
+    padding-left: 30px;
+  }
+  #menu li {
+    display: block;
+    float: none;
+    width: auto;
+  }
+  #menu input,
+  #menu label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  #menu input {
+    z-index: 4;
+  }
+  #menu input:checked + label {
+    color: white;
+  }
+  #menu input:checked + label:before {
+    content: "\00d7";
+  }
+  #menu input:checked ~ ul {
+    display: block;
+  }
+}
+/* Estilos da primeira imagem e texto
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 50vh; /* Centraliza verticalmente o conteúdo 
+  background-size: cover;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.flex-container h2 {
+  font-size: 36px; /* Tamanho do título 
+  margin: 0;
+}
+
+.flex-container p {
+  font-size: 18px; /* Tamanho do texto 
+}
+
+/* Estilos da segunda imagem e texto 
+.flex-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 50vh; /* Centraliza verticalmente o conteúdo 
+  background-size: cover;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.flex-container2 h3 {
+  font-size: 24px; /* Tamanho do título 
+}
+
+/* Outros estilos, se houver
+
+/* Estilos do rodapé 
+footer {
+  background-color: rgba(50, 9, 116, 0.778);
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+*/

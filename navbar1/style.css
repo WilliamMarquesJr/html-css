@@ -1,0 +1,128 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.links a.dropdown-arrow:after {
+    content: "\23F7";
+    margin-left: 5px;
+}
+
+.links li {
+    float: left;
+    display: inline;
+    position: relative;
+    margin-top: 20px;
+} 
+
+.links ul.sub-menus {
+    height: auto;
+    overflow: hidden;
+    width: 170px;
+    position: absolute;
+    z-index: 99;
+    display: none;
+}
+
+.links ul.sub-menus li {
+    display: block;
+    width: 100%;
+}
+
+.links ul.sub-menus a {
+    font-size: 15px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.links li:hover ul.sub-menus {
+    display: block;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.logo:hover {
+    color: rgb(175, 20, 20);
+    transition-duration: .40s;
+    text-shadow: 2px 2px 3px rgba(54, 9, 9, 0.438);
+}
+
+.nav-itens {
+    list-style: none;
+    display: flex;
+}
+
+.nav-itens a{
+    padding: 10px 30px;
+    font-size: 15px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .40s background;
+}
+
+.nav-itens a:hover {
+    transition-duration: .40s;
+    color: white;
+    background-color:rgb(83, 83, 83);
+}
+
+.nav-itens>li {
+    padding-left: 20px;
+}
+
+.nav-itens>li>a {
+    padding-left: 15px;
+    color: black;
+    text-decoration: none;
+
+}
+
+.login {
+    padding: 10px 30px;
+    font-size: 15px;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .40s background;
+}
+
+.login:hover {
+    transition-duration: .40s;
+    color: white;
+    background-color:rgb(83, 83, 83);
+}
+
+.signUp {
+    padding: 10px 30px;
+    font-size: 15px;
+    border: none;
+    color: azure;
+    border-radius: 3px;
+    background-color:rgba(34, 30, 30, 0.856);
+    cursor: pointer;
+    transition: .40s background;
+}
+
+.signUp:hover {
+    transition-duration: .40s;
+    color: white;
+    background-color:rgb(133, 130, 130);
+}
+
