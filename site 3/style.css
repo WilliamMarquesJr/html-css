@@ -287,28 +287,6 @@ li {
   background-color:#5b5bb1ee;
 }
 
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: stretch;
-    align-content: stretch;
-  }
-  
-  .footer-items:nth-child(1) {
-    display: block;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-    align-self: auto;
-    order: 0;
-    color: black;
-    background-color: #9393e585;
-    padding: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  }
-
   /*pagina 2*/
   
 
@@ -342,59 +320,44 @@ li {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.footer-container1 {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  align-items: stretch;
-  align-content: stretch;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-.footer-items1:nth-child(1) {
-  display: block;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: auto;
-  align-self: auto;
-  order: 0;
-  color: black;
-  background-color: #9393e585
-}
-
 /* pag 3 */
 
 .history {
-  width: 100%;
-  overflow: hidden; /* Para conter as flutuações */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Para alinhar os itens verticalmente ao topo */
+}
+
+.curiosities h1 {
+text-align: center;
 }
 
 .box-information-pag2 {
+
+  margin-top: 20px;
   padding: 50px;
+  margin-left: 20px;
+  margin-right: 5px;
   border-radius: 10px;
   background-color: #9393e585;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  margin-right: 40px;
-  text-align: center;
-  font-size: 15px;
-  float: left; /* Flutuar à esquerda */
-  width: 50%; /* Defina a largura conforme necessário */
-  box-sizing: border-box; /* Incluir preenchimento e borda na largura */
+}
+
+.box-information-pag2-2 {
+
+  margin-top: 20px;
+  padding: 50px;
+  margin-left: 20px;
+  margin-right: 5px;
+  border-radius: 10px;
+  background-color: #9393e585;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .history-img {
-  max-width: 80vh;
-  float: right; /* Flutuar à direita */
-  width: 50%; /* Defina a largura conforme necessário */
-}
-
-@media only screen and (max-width: 768px) {
-  .box-information-pag2, .curiosity-img {
-      width: 100%; /* Em telas menores, ocupa 100% da largura */
-      float: none; /* Remove flutuação */
-      margin-right: 0; /* Remove margem direita */
-  }
+  max-width: 50vh;
+  margin-top: 20px;
+  margin-left: 1vh;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
