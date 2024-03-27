@@ -95,7 +95,7 @@ nav {
     background-color:#5b5bb1ee;
 }
 
-.box-information1 {
+.box-information-pag0 {
     margin: 50px;
     padding: 100px;
     border-radius: 10px;
@@ -117,7 +117,7 @@ nav {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
   
-  .box-information2:nth-child(1) {
+  .box-information-pag0-1:nth-child(1) {
     display: block;
     flex-grow: 0;
     flex-shrink: 1;
@@ -126,7 +126,7 @@ nav {
     order: 0;
   }
   
-  .box-information3:nth-child(2) {
+  .box-information-pag0-2:nth-child(2) {
     display: block;
     flex-grow: 0;
     flex-shrink: 1;
@@ -147,8 +147,8 @@ li {
 .card1 {
   margin: 50px auto; /* Ajuste para centralizar verticalmente e horizontalmente */
   background-color: #9393e585;
-  width: 350px;
-  height: 500px;
+  width: 250px;
+  height: 450px;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   text-align: center; /* Centralizar conteúdo */
@@ -165,8 +165,8 @@ li {
 .card2 {
   margin: 50px auto; /* Ajuste para centralizar verticalmente e horizontalmente */
   background-color: #9393e585;
-  width: 350px;
-  height: 500px;
+  width: 250px;
+  height: 450px;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   text-align: center; /* Centralizar conteúdo */
@@ -183,8 +183,8 @@ li {
 .card3 {
   margin: 50px auto; /* Ajuste para centralizar verticalmente e horizontalmente */
   background-color: #9393e585;
-  width: 350px;
-  height: 500px;
+  width: 250px;
+  height: 450px;
   border-radius: 10px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   text-align: center; /* Centralizar conteúdo */
@@ -305,8 +305,96 @@ li {
     order: 0;
     color: black;
     background-color: #9393e585;
-    padding: 20px;
+    padding: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
 
+  /*pagina 2*/
   
+
+  .curiosities {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Para alinhar os itens verticalmente ao topo */
+}
+
+.curiosities h1 {
+  text-align: center;
+}
+
+.box-information-pag1 {
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #9393e585;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.curiosity-item {
+  margin-top: 100px;
+  margin-left:40px;
+  margin-right: 40px;
+}
+
+.curiosity-item img {
+
+  border-radius: 10px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.footer-container1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: stretch;
+  align-content: stretch;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-items1:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  color: black;
+  background-color: #9393e585
+}
+
+/* pag 3 */
+
+.history {
+  width: 100%;
+  overflow: hidden; /* Para conter as flutuações */
+}
+
+.box-information-pag2 {
+  padding: 50px;
+  border-radius: 10px;
+  background-color: #9393e585;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  margin-right: 40px;
+  text-align: center;
+  font-size: 15px;
+  float: left; /* Flutuar à esquerda */
+  width: 50%; /* Defina a largura conforme necessário */
+  box-sizing: border-box; /* Incluir preenchimento e borda na largura */
+}
+
+.history-img {
+  max-width: 80vh;
+  float: right; /* Flutuar à direita */
+  width: 50%; /* Defina a largura conforme necessário */
+}
+
+@media only screen and (max-width: 768px) {
+  .box-information-pag2, .curiosity-img {
+      width: 100%; /* Em telas menores, ocupa 100% da largura */
+      float: none; /* Remove flutuação */
+      margin-right: 0; /* Remove margem direita */
+  }
+}
