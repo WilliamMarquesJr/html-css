@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tabelas</title>
+</head>
+<body>
+<!--Hierarquia de tabelas (simples)
+    able = tabela
+    table row = linha de tabela
+    table header = cabeçalho de tabela
+    table data = dado de tabela-->
+<!--Anatomia para tabelas grandes
+    tabela funciona assim:
+    THEAD
+    aqui pode ter: tr, td, th
+    TBODY
+    aqui pode ter: tr, td, th
+    TFOOT
+    aqui pode ter: tr, td, th-->
+    <div class="container">
+        <table>
+            <!--forma fácil pra mudar a cor ou editar várias colunas e várias linhas com
+            com a tag
+            <colgroup>
+                <col>
+            </colgroup>-->
+            <colgroup>
+                <col class="nome">
+                <col class="sexo">
+                <col class="idade">
+                <col class="profissao">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">profissão</th>
+            </tr>
+            <tr>
+                <td>Nami</td>
+                <td>Masculino</td>
+                <td class="number">27</td>
+                <td>programador</td>
+            </tr>
+            <tr>
+                <td>Nami</td>
+                <td>Masculino</td>
+                <td class="number">27</td>
+                <td>programador</td>
+            </tr>
+            <tr>
+                <td>Nami</td>
+                <td>Masculino</td>
+                <td class="number">27</td>
+                <td>programador</td>
+            </tr>
+            <tr>
+                <td>Nami</td>
+                <td>Masculino</td>
+                <td class="number">27</td>
+                <td>programador</td>
+            </tr>
+            <tr>
+                <td>Nami</td>
+                <td>Masculino</td>
+                <td class="number">27</td>
+                <td>programador</td>
+            </tr>
+            <tr>
+                <td>Nami</td>
+                <td>Masculino</td>
+                <td class="number">27</td>
+                <td>programador</td>
+            </tr>
+            <tr>
+                <td>Nami</td>
+                <td>Masculino</td>
+                <td class="number">27</td>
+                <td>programador</td>
+            </tr>
+            <tr>
+                <td>Nami</td>
+                <td>Masculino</td>
+                <td class="number">27</td>
+                <td>programador</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

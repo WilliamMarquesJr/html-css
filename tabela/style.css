@@ -1,0 +1,58 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+table {
+    width: 600px;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 1.3em;
+    padding: 15px;
+    text-transform:uppercase;
+    color: azure;
+    border: 1px solid black;
+    background-color: black;
+}
+
+caption:hover {
+    background-color: rgb(32, 32, 32);
+    transition: .40s;
+}
+
+th {
+    color: azure;
+    background-color:slateblue;
+}
+
+th:hover {
+    transition: .40s;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.575);
+    background-color:rgb(93, 69, 248);
+    font-weight: bolder;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td:hover {
+    color: azure;
+    background-color: grey;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.575);
+    transition: .30s;
+}
+
+.number {
+    text-align: right;
+}
+
+/* pra fazer a tabela ficar responsive */
+
+.container {
+    overflow-x: auto;
+}

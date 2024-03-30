@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;  /* pra fazer o item ficar fixado no centro */
+    height: 100vh;
+}
+
+body {
+    background: url(../img/fundo-madeira.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#phone {
+    position: absolute;  /* pra fazer o item ficar fixado no centro */
+    top: 50%;  /* pra fazer o item ficar fixado no centro */
+    left: 50%;  /* pra fazer o item ficar fixado no centro */
+    transform: translate(-50%, -50%); /* pra fazer o item ficar fixado no centro */
+    height: 627px;
+    width: 311px;
+    background: url('../img/frame-iphone.png') no-repeat;
+}
+
+iframe#screen {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
+
+section#social-media {
+    text-align: right;
+}
+
+section#social-media img:hover {
+    border: 2px solid azure;
+    transition: transform .40s, border .20s;
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px 11px rgba(0, 0, 0, 0.521);
+}
+
+section#social-media img {
+    box-sizing: border-box;
+    width: 50px;
+    margin: 10px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.692);
+}
