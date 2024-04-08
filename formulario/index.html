@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <!--essa parte do input com name e id, o name é mais usado pro php, e outras como java é usado o id-->
+    <!--não pode usar o get se ultrapassar de 3 mil caracteres ou se for usar coisas sensiveis como
+        cartao de credito etc. Pq os dados n ficam escondidos. Também n pode com envio de foto ou
+        qualquer outro arquivo, se for esse caso, devo utilizar o "POST"-->
+        <form action="cadastro.js" method="post" autocomplete="off">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <p>
+                    <label for="iusuario">Usuário </label>
+                    <input type="text" name="usuario" id="iusuario" required minlength="5" maxlength="15" size="10" placeholder="Usuário">
+                </p>
+                <p>
+                    <label for="isenha">Senha </label>
+                    <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" size="12" placeholder="Senha">
+                </p>
+                <p>
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="limpar">
+                </p>
+            </fieldset>
+        </form>
+                <br>
+                <p>Já tem conta?</p>
+                <p> <button>Clique aqui</button></p>
+
+        <h1>form aluno</h1>
+        <form action="cadastro.js" autocomplete="on">
+            <fieldset>
+                <legend>Média do aluno</legend>
+                <p>
+                    <label for="text">Nome</label>
+                    <input type="text" name="name" id="iname" required maxlength="30" placeholder="nome completo" autocomplete="name">
+                </p>
+                <p>
+                    <label for="imedia">Média</label>
+                    <input type="number" name="media" id="imedia" required placeholder="0 a 10" min="0" max="10" step="0.1" autocomplete="cc-number">
+                </p>
+                <p>
+                    <label for="imes">Semestre</label>
+                    <input type="month" name="mes" id="imes" required autocomplete="bday-month">
+                </p>
+                <p>
+                    <label for="idate">Data</label>
+                    <input type="date" name="date" id="idate" required>
+                </p>
+                <p>
+                    <label for="iprova">Horário da prova</label>
+                    <input type="time" name="prova" id="iprova">
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Dados Cadastrais</legend>
+                <p>
+                    <label for="iemail">E-mail</label>
+                    <input type="email" name="email" id="iemail" required placeholder="abcabcabc@email.com" autocomplete="email">
+                </p>
+                <p>
+                    <label for="iphone">Telefone</label>
+                    <input type="tel" required placeholder="1190000-0000" autocomplete="tel" pattern="^\(\d{2}\)[0-9]{4,5}-[0-9]{4}$">
+                </p>
+                <p>
+                    <input type="submit" value="enviar">
+                    <input type="reset">
+                </p>
+            </fieldset>
+        </form>
+        <h1>checkbox</h1>
+        <form action="cadastro.js" method="get" autocomplete="on">
+            <fieldset>
+                <legend>Quais jogos desta lista você gosta?</legend>
+                <input type="checkbox" name="sotc" id="isotc"> <label for="isotc">Shadow of the Colossus</label><br>
+                <input type="checkbox" name="tlou" id="itlou"> <label for="itlou">The Last of Us</label><br>
+                <input type="checkbox" name="gow" id="igow"> <label for="igow">God of War</label><br>
+                <input type="checkbox" name="re" id="ire"><label for="ire"> Resident Evil</label><br>
+                <input type="checkbox" name="shino" id="ishino"> <label for="ishino">Shinobido</label><br>
+                <input type="checkbox" name="sims" id="isims"> <label for="isims">The sims</label><br>
+                <input type="checkbox" name="fifa" id="ififa"> <label for="ififa">Fifa</label><br>
+                <input type="checkbox" name="dmc" id="idmc"> <label for="idmc">Devil May Cry</label><br>
+                <input type="checkbox" name="lol" id="ilol"> <label for="ilol">League of Legends</label><br>
+                <input type="checkbox" name="val" id="ival"> <label for="ival">Valorant</label><br>
+                <input type="checkbox" name="sf6" id="isf6"> <label for="isf6">Street Fighter 6</label><br>
+                <input type="checkbox" name="bg3" id="ibg3"> <label for="ibg3">Baldurs Gate 3</label><br>
+                <input type="checkbox" name="card" id="icard"> <label for="icard">Card game (Runeterra, Hearthstone, Magic, Yu-gi-oh)</label><br>
+                <input type="checkbox" name="novel" id="inovel"> Visual novel<br>
+            </fieldset>
+            <fieldset>
+                <!--botão de radio, só pode ter um marcado, pra isso é só colocar o mesmo name="" para
+                    os dois inputs, assim sempre vai ficar uma caixinha marcada.-->
+                <legend>orientação sexual</legend>
+                <input type="radio" name="sexo" id="isexmas" value="M"> <label for="isexmas">Masculino</label>
+                <br>
+                <input type="radio" name="sexo" id="isexfem" value="F"><label for="isexfem">Feminino</label>
+            </fieldset>
+        </form>
+        <h1>cores</h1>
+        <form action="cadastro.js" autocomplete="on">
+            <fieldset>
+                <legend>Cores</legend>
+                <label for="icor">Cor </label>
+                <input type="color" name="cor" id="icor">
+            </fieldset>
+            <fieldset>
+                <legend>Nota 1 a 10</legend>
+                <label for="isatisfacao">Nível de satisfação</label>
+                <input type="range" name="satisfação" id="isatisfacao" min="1" max="10">
+            </fieldset>
+            <fieldset>
+                <legend>imagem</legend>
+                <label for="iimg">Fotinha</label>
+                <input type="file" name="img" id="iimg">
+            </fieldset>
+        </form>
+        <form action="cadastro.js" method="post" autocomplete="on">
+            <p>
+                <label for="iest">Estado</label>
+                <select name="est" id="iest">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="SP">São Paulo</option>
+                </select>
+            </p>
+        </form>
+</body>
+</html>
