@@ -33,7 +33,7 @@ section#login {
 }
 
 section#login > div#img {
-    background: black url(../img/Wishing\ you\ roses.jpeg);
+    background: black url(Wishing\ you\ roses.jpeg);
     height: 200px;
     background-size: cover;
     background-position: center;
